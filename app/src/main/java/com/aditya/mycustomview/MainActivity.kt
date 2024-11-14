@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.aditya.mycustomview.customview.CustomActivity
 import com.aditya.mycustomview.customviewlike.CustomLikeActivity
 import com.aditya.mycustomview.customviewraw.CustomRawActivity
+import com.aditya.mycustomview.onboardingpage.OnBoardingPageActivity
 import com.aditya.mycustomview.webview.WebViewActivity
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnWebView).setOnClickListener {
             WebViewActivity.generateIntent(this)
+        }
+
+        findViewById<Button>(R.id.btnOnBoardingPage).setOnClickListener {
+            OnBoardingPageActivity.generateIntent(this)
         }
     }
 

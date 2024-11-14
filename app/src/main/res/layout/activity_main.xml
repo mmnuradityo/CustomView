@@ -24,7 +24,7 @@
         android:layout_margin="16dp"
         android:text="Custom Raw View"
         app:layout_constraintTop_toBottomOf="@+id/btnCustomView"
-        app:layout_constraintBottom_toBottomOf="@+id/btnCustomLikeView"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnCustomLikeView"/>
 
     <Button
         android:id="@+id/btnCustomLikeView"
@@ -33,7 +33,7 @@
         android:layout_margin="16dp"
         android:text="Custom Like View"
         app:layout_constraintTop_toBottomOf="@+id/btnCustomRawView"
-        app:layout_constraintBottom_toBottomOf="@+id/btnWebView"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnWebView"/>
 
     <Button
         android:id="@+id/btnWebView"
@@ -42,6 +42,15 @@
         android:layout_margin="16dp"
         android:text="Web View"
         app:layout_constraintTop_toBottomOf="@+id/btnCustomLikeView"
+        app:layout_constraintBottom_toTopOf="@id/btnOnBoardingPage"/>
+
+    <Button
+        android:id="@+id/btnOnBoardingPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="On Boarding Page"
+        app:layout_constraintTop_toBottomOf="@+id/btnWebView"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
